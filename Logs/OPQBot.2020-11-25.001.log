@@ -1,0 +1,3055 @@
+2020/11/24 04:05:35.405 [E]  Will ReConnect After:8 s TXSERVER msfwifi.3g.qq.com:8080 User 783960732 Offline Nick 0.0 
+2020/11/24 10:17:08.577 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{829252508 桂重大王八--想想李宇 1837099861 你_的为什么 cos TextMsg 1606184228 157474 234642111 <nil>} 
+2020/11/24 10:17:24.987 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{829252508 桂重大王八--想想李宇 1837099861 你_的为什么 cos TextMsg 1606184244 157477 817868524 <nil>} 
+2020/11/24 10:28:23.201 [E]  QQLuaVmRun CallGlobal err <string>:141: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:141: in function 'Comic'
+	<string>:12: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{829252508 桂重大王八--想想李宇 542109056 Oriental leaves 漫画 TextMsg 1606184902 157491 1645950057 <nil>} 
+2020/11/24 10:28:41.755 [E]  QQLuaVmRun CallGlobal err <string>:141: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:141: in function 'Comic'
+	<string>:12: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{829252508 桂重大王八--想想李宇 403038985 郭邦 漫画 TextMsg 1606184921 157496 2122804904 <nil>} 
+2020/11/24 10:29:43.654 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{829252508 桂重大王八--想想李宇 1837099861 你_的为什么 cos TextMsg 1606184983 157505 1063259221 <nil>} 
+2020/11/24 10:35:54.152 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{829252508 桂重大王八--想想李宇 1837099861 你_的为什么 cos TextMsg 1606185353 157529 1169779376 <nil>} 
+2020/11/24 10:36:07.503 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{1014748325 lua 1837099861 你_的为什么 cos TextMsg 1606185367 1503 589989425 <nil>} 
+2020/11/24 11:16:40.756 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2796765941 USA战时总统 cos TextMsg 1606187800 34344 816752391 <nil>} 
+2020/11/24 19:09:28.133 [E]  r18.lua
+2020/11/24 19:09:28.133 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图"，
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if table[i] == val then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:09:33.580 [E]  r18.lua
+2020/11/24 19:09:33.580 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图"，
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if table[i] == val then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:10:47.275 [E]  r18.lua
+2020/11/24 19:10:47.275 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:36.090 [E]  r18.lua
+2020/11/24 19:11:36.091 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:39.098 [E]  r18.lua
+2020/11/24 19:11:39.098 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:39.720 [E]  r18.lua
+2020/11/24 19:11:39.721 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:40.041 [E]  r18.lua
+2020/11/24 19:11:40.041 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:40.428 [E]  r18.lua
+2020/11/24 19:11:40.428 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:40.617 [E]  r18.lua
+2020/11/24 19:11:40.617 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:50.965 [E]  r18.lua
+2020/11/24 19:11:50.965 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:52.434 [E]  r18.lua
+2020/11/24 19:11:52.434 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:55.033 [E]  r18.lua
+2020/11/24 19:11:55.033 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:55.292 [E]  r18.lua
+2020/11/24 19:11:55.292 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:55.339 [E]  r18.lua
+2020/11/24 19:11:55.339 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:55.549 [E]  r18.lua
+2020/11/24 19:11:55.549 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:55.600 [E]  r18.lua
+2020/11/24 19:11:55.600 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:55.754 [E]  r18.lua
+2020/11/24 19:11:55.754 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:56.261 [E]  r18.lua
+2020/11/24 19:11:56.261 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:56.850 [E]  r18.lua
+2020/11/24 19:11:56.850 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:56.936 [E]  r18.lua
+2020/11/24 19:11:56.936 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:57.669 [E]  r18.lua
+2020/11/24 19:11:57.669 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:11:58.250 [E]  r18.lua
+2020/11/24 19:11:58.250 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:12:04.795 [E]  SendWaitPkg err timeout
+2020/11/24 19:12:04.795 [E]  QQLuaVmRun CallGlobal err interface conversion: interface {} is nil, not *Sub_0xmhzAG.TryUpImgRsp
+stack traceback:
+	[G]: in function 'Api_SendMsg'
+	<string>:26: in main chunk
+	[G]: ? detail File meizi.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2796765941 USA战时总统 妹子 TextMsg 1606216312 34424 535354401 <nil>} 
+2020/11/24 19:12:44.625 [E]  r18.lua
+2020/11/24 19:12:44.626 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:14:02.788 [E]  r18.lua
+2020/11/24 19:14:02.788 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:14:11.277 [E]  r18.lua
+2020/11/24 19:14:11.277 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:14:31.195 [E]  r18.lua
+2020/11/24 19:14:31.195 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:14:33.861 [E]  r18.lua
+2020/11/24 19:14:33.861 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:14:37.701 [E]  r18.lua
+2020/11/24 19:14:37.702 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:15:19.480 [E]  r18.lua
+2020/11/24 19:15:19.480 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:15:42.141 [E]  r18.lua
+2020/11/24 19:15:42.141 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:15:42.381 [E]  r18.lua
+2020/11/24 19:15:42.381 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+2020/11/24 19:15:52.344 [E]  r18.lua
+2020/11/24 19:15:52.344 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+local indexTable = 
+{
+    "来点涩图",
+    "来点色图",
+    "来点瑟图"
+
+}
+local whitelist = 
+{
+    1837099861
+}
+
+local function contains(table, val)
+   for i = 1, #table do
+      if table[i] == val then 
+         return true
+      end
+   end
+   return false
+end
+
+local function regex(table,val)
+    for i = 1,#table do
+        if (string.find(val,table[i]) == 1) then
+            return true
+            break
+        end
+    end
+    return false
+end
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    if not contains(whitelist, data.FromUin) then
+        return 1
+    end
+    
+    if not regex(indexTable,data.Content) then
+        return 1
+    end
+
+    
+    local idx = math.random(0, 20) -- 有效的索引从0000 ~ 0020
+    idx = string.format('%04d', idx) -- 前面填充0,
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/setu_r18_" .. idx .. ".js" -- 索引文件地址
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2) -- 去掉前面的setu_xxxx(和后面的)
+    resp = json.decode(resp)
+    local item = resp[math.random(#resp)] -- 从数组中随机选取一个元素
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/setu_pics/" .. item.path
+    local text = "『" .. item.title .. "』 作者：" .. item.author
+    log.info("url=%s, text=%s", url, text)
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = text,
+            atUser = 0
+        }
+    )
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+    return 1    
+end
+
+function ReceiveGroupMsg(CurrentQQ, data)
+    return 1
+end
+
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end

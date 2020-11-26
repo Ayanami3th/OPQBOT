@@ -1,0 +1,372 @@
+2020/11/21 16:48:08.590 [E]  demo.lua
+2020/11/21 16:48:08.590 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+Database= {}
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content,"定义") == 1) then
+        if(string.find(data.Content," ")) then
+            head = string.find(data.Content," ")
+            if(string.find(data.Content," ",head+1)) then
+                tail = string.find(data.Content," ",head+1)
+                Database[string.sub(data.Content,head+1,tail-1)] = string.sub(data.Content,tail+1)
+                luaRes =
+                Api.Api_SendMsg(
+                CurrentQQ,
+                {
+                    toUser = data.FromGroupId,
+                    sendToType = 2,
+                    sendMsgType = "TexTMsg",
+                    groupid = 0,
+                    content = "定义成功",
+                    atUser = 0
+                }
+            )
+            end
+        end
+    end
+    for k,v in pairs(Database) do
+        if (string.find(data.Content, k) == 1) then
+            keyWord = Database[string.sub(data.Content,head+1,tail-1)]
+
+            --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+            luaRes =
+                Api.Api_SendMsg(
+                CurrentQQ,
+                {
+                    toUser = data.FromGroupId,
+                    sendToType = 2,
+                    sendMsgType = "TexTMsg",
+                    groupid = 0,
+                    content = keyWord,
+                    atUser = 0
+                }
+            )
+            log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+            break
+        end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/21 16:48:08.951 [E]  demo.lua
+2020/11/21 16:48:08.951 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+Database= {}
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content,"定义") == 1) then
+        if(string.find(data.Content," ")) then
+            head = string.find(data.Content," ")
+            if(string.find(data.Content," ",head+1)) then
+                tail = string.find(data.Content," ",head+1)
+                Database[string.sub(data.Content,head+1,tail-1)] = string.sub(data.Content,tail+1)
+                luaRes =
+                Api.Api_SendMsg(
+                CurrentQQ,
+                {
+                    toUser = data.FromGroupId,
+                    sendToType = 2,
+                    sendMsgType = "TexTMsg",
+                    groupid = 0,
+                    content = "定义成功",
+                    atUser = 0
+                }
+            )
+            end
+        end
+    end
+    for k,v in pairs(Database) do
+        if (string.find(data.Content, k) == 1) then
+            keyWord = Database[string.sub(data.Content,head+1,tail-1)]
+
+            --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+            luaRes =
+                Api.Api_SendMsg(
+                CurrentQQ,
+                {
+                    toUser = data.FromGroupId,
+                    sendToType = 2,
+                    sendMsgType = "TexTMsg",
+                    groupid = 0,
+                    content = keyWord,
+                    atUser = 0
+                }
+            )
+            log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+            break
+        end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/21 20:08:41.546 [E]  Replay.lua
+2020/11/21 20:08:41.546 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "测试") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+        Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromGroupId,
+            sendToType = 2,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = "监听成功",
+            atUser = 0
+        }
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/21 20:09:09.794 [E]  Replay.lua
+2020/11/21 20:09:09.794 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "测试") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+        Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromGroupId,
+            sendToType = 2,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = "监听成功",
+            atUser = 0
+        }
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/21 20:12:19.764 [E]  Replay.lua
+2020/11/21 20:12:19.764 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "测试") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+        Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromGroupId,
+            sendToType = 2,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = "监听成功",
+            atUser = 0
+        }
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/21 20:12:21.541 [E]  Replay.lua
+2020/11/21 20:12:21.541 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "测试") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+        Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromGroupId,
+            sendToType = 2,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = "监听成功",
+            atUser = 0
+        }
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/21 20:15:32.344 [E]  Replay.lua
+2020/11/21 20:15:32.344 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "测试") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+        Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            toUser = data.FromGroupId,
+            sendToType = 2,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = "监听成功",
+            atUser = 0
+        }
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/21 20:22:10.424 [E]  QQLuaVmRun CallGlobal err <string>:98: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:98: in function 'Illustration'
+	<string>:15: in main chunk
+	[G]: ? detail File PicFriend.lua when  call ReceiveFriendMsg params [0] 783960732  [1] &{1837099861 783960732 TextMsg 13262 插画 <nil>} 
+2020/11/21 20:22:48.375 [E]  QQLuaVmRun CallGlobal err json:151: unexpected character '<' at line 1 col 1
+stack traceback:
+	[G]: in function 'error'
+	json:151: in function 'decode_error'
+	json:327: in function 'parse'
+	json:333: in function 'decode'
+	<string>:709: in function 'Pixiv'
+	<string>:63: in main chunk
+	[G]: ? detail File PicFriend.lua when  call ReceiveFriendMsg params [0] 783960732  [1] &{1837099861 783960732 TextMsg 13263 美图 <nil>} 
+2020/11/21 20:53:19.349 [E]  QQLuaVmRun CallGlobal err <string>:364: context deadline exceeded
+stack traceback:
+	<string>:364: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1837099861 王一博今天学了吗 cos TextMsg 1605963120 32882 223845487 <nil>} 
+2020/11/21 21:04:17.009 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2796765941 USA战时总统 cos TextMsg 1605963856 32906 1773912481 <nil>} 
+2020/11/21 21:50:27.721 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1837099861 王一博今天学了吗 cos TextMsg 1605966627 32967 226176815 <nil>} 
+2020/11/21 22:10:59.023 [E]  QQLuaVmRun CallGlobal err <string>:404: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:404: in function 'Sifu'
+	<string>:30: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 特朗普•川 私服 TextMsg 1605967858 32983 2128529419 <nil>} 
+2020/11/21 22:11:34.709 [E]  QQLuaVmRun CallGlobal err <string>:48: unfinished capture at EOS
+stack traceback:
+	[G]: in function 'match'
+	<string>:48: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 特朗普•川 这是什么(ㅇㅁㅇ川 TextMsg 1605967894 32987 1314025190 <nil>} 
+2020/11/21 22:12:14.354 [E]  QQLuaVmRun CallGlobal err <string>:185: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:185: in function 'Draw'
+	<string>:15: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 特朗普•川 其他 TextMsg 1605967934 32994 62718424 <nil>} 
+2020/11/21 22:12:35.169 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 特朗普•川 插画 TextMsg 1605967955 32995 1951223250 <nil>} 
+2020/11/21 23:24:02.958 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2656148918 代哥哥 cos TextMsg 1605972242 33015 1978552830 <nil>} 
+2020/11/21 23:24:06.274 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2656148918 代哥哥 cos TextMsg 1605972246 33019 1716530247 <nil>} 
+2020/11/21 23:25:05.067 [E]  QQLuaVmRun CallGlobal err <string>:364: context deadline exceeded
+stack traceback:
+	<string>:364: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2656148918 代哥哥 cos TextMsg 1605972239 33011 77791474 <nil>} 
+2020/11/21 23:26:36.654 [E]  QQLuaVmRun CallGlobal err <string>:441: attempt to index a non-table object(nil) with key '1'
+stack traceback:
+	<string>:441: in function 'WeekRankCosplay'
+	<string>:33: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1837099861 王一博今天学了吗 cos周排行 TextMsg 1605972343 33034 1993676639 <nil>} 
+2020/11/21 23:27:40.081 [E]  QQLuaVmRun CallGlobal err <string>:483: attempt to index a non-table object(nil) with key '1'
+stack traceback:
+	<string>:483: in function 'MonthRankCosplay'
+	<string>:36: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1837099861 王一博今天学了吗 cos月排行 TextMsg 1605972459 33049 678534850 <nil>} 
+2020/11/21 23:29:51.956 [E]  QQLuaVmRun CallGlobal err <string>:408: context deadline exceeded
+stack traceback:
+	<string>:408: in function 'Sifu'
+	<string>:30: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1837099861 王一博今天学了吗 私服 TextMsg 1605972483 33055 166920746 <nil>} 
+2020/11/21 23:31:44.362 [E]  QQLuaVmRun CallGlobal err <string>:404: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:404: in function 'Sifu'
+	<string>:30: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1837099861 王一博今天学了吗 私服 TextMsg 1605972704 33086 1393198867 <nil>} 
+2020/11/21 23:34:24.028 [E]  QQLuaVmRun CallGlobal err <string>:404: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:404: in function 'Sifu'
+	<string>:30: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1837099861 王一博今天学了吗 私服 TextMsg 1605972863 33097 523023069 <nil>} 
+2020/11/21 23:34:39.749 [E]  QQLuaVmRun CallGlobal err <string>:525: attempt to index a non-table object(nil) with key '1'
+stack traceback:
+	<string>:525: in function 'MonthRankSifu'
+	<string>:39: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1837099861 王一博今天学了吗 私服排行 TextMsg 1605972875 33098 345077004 <nil>} 
+2020/11/21 23:39:27.860 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 mouse_tail_juice cos TextMsg 1605973167 33121 1926185350 <nil>} 
+2020/11/21 23:39:33.306 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 mouse_tail_juice cos TextMsg 1605973173 33125 974353283 <nil>} 
+2020/11/21 23:42:30.939 [E]  QQLuaVmRun CallGlobal err <string>:364: context deadline exceeded
+stack traceback:
+	<string>:364: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 mouse_tail_juice cos TextMsg 1605973278 33135 1172588153 <nil>} 

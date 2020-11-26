@@ -1,0 +1,3998 @@
+2020/11/25 09:20:34.955 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2656148918 代哥哥 cos TextMsg 1606267234 34627 360076175 <nil>} 
+2020/11/25 09:21:43.328 [E]  QQLuaVmRun CallGlobal err <string>:364: context deadline exceeded
+stack traceback:
+	<string>:364: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2656148918 代哥哥 cos TextMsg 1606267230 34615 1521622485 <nil>} 
+2020/11/25 09:22:17.570 [E]  QQLuaVmRun CallGlobal err <string>:364: context deadline exceeded
+stack traceback:
+	<string>:364: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2656148918 代哥哥 cos TextMsg 1606267231 34618 1027293190 <nil>} 
+2020/11/25 09:22:20.451 [E]  QQLuaVmRun CallGlobal err <string>:364: context deadline exceeded
+stack traceback:
+	<string>:364: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2656148918 代哥哥 cos TextMsg 1606267261 34641 1519263957 <nil>} 
+2020/11/25 09:22:45.932 [E]  QQLuaVmRun CallGlobal err <string>:364: context deadline exceeded
+stack traceback:
+	<string>:364: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2656148918 代哥哥 cos TextMsg 1606267259 34637 761903122 <nil>} 
+2020/11/25 09:46:16.472 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1837099861 王一博今天学了吗 cos排行 TextMsg 1606268776 34743 1182506546 <nil>} 
+2020/11/25 09:46:39.961 [E]  QQLuaVmRun CallGlobal err <string>:441: attempt to index a non-table object(nil) with key '1'
+stack traceback:
+	<string>:441: in function 'WeekRankCosplay'
+	<string>:33: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1837099861 王一博今天学了吗 cos周排行 TextMsg 1606268785 34744 583191573 <nil>} 
+2020/11/25 09:46:45.740 [E]  QQLuaVmRun CallGlobal err <string>:483: attempt to index a non-table object(nil) with key '1'
+stack traceback:
+	<string>:483: in function 'MonthRankCosplay'
+	<string>:36: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1837099861 王一博今天学了吗 cos月排行 TextMsg 1606268803 34750 1983496453 <nil>} 
+2020/11/25 09:47:02.143 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1837099861 王一博今天学了吗 cos年排行 TextMsg 1606268821 34754 325415414 <nil>} 
+2020/11/25 09:52:49.137 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606269168 34776 1131778653 <nil>} 
+2020/11/25 09:53:00.181 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606269179 34777 1710457133 <nil>} 
+2020/11/25 09:55:01.566 [E]  QQLuaVmRun CallGlobal err <string>:100: context deadline exceeded
+stack traceback:
+	<string>:100: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2796765941 USA战时总统 插画 TextMsg 1606269181 34778 604447108 <nil>} 
+2020/11/25 09:59:48.026 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606269587 34820 1364235581 <nil>} 
+2020/11/25 10:03:57.762 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606269837 34835 1637007600 <nil>} 
+2020/11/25 10:04:35.602 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606269875 34836 375691827 <nil>} 
+2020/11/25 10:06:45.592 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606270005 34849 803941296 <nil>} 
+2020/11/25 10:08:38.056 [E]  QQLuaVmRun CallGlobal err <string>:100: context deadline exceeded
+stack traceback:
+	<string>:100: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1801267017 代叔叔 插画 TextMsg 1606270055 34853 14484330 <nil>} 
+2020/11/25 10:09:44.651 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606270184 34860 1067259123 <nil>} 
+2020/11/25 10:09:54.618 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606270194 34861 1137743472 <nil>} 
+2020/11/25 10:12:56.338 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606270376 34869 1566457508 <nil>} 
+2020/11/25 10:22:33.199 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606270952 34907 500106925 <nil>} 
+2020/11/25 10:24:17.778 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271057 34915 2013803979 <nil>} 
+2020/11/25 10:24:56.706 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271096 34919 1788077298 <nil>} 
+2020/11/25 10:25:21.755 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271121 34923 781127070 <nil>} 
+2020/11/25 10:25:55.264 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271155 34927 1260402075 <nil>} 
+2020/11/25 10:26:00.982 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271160 34928 955085987 <nil>} 
+2020/11/25 10:26:55.717 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271215 34932 768643681 <nil>} 
+2020/11/25 10:29:46.977 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271386 34957 1571380012 <nil>} 
+2020/11/25 10:30:20.461 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271420 34961 1539066675 <nil>} 
+2020/11/25 10:33:13.129 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271592 34980 1764558460 <nil>} 
+2020/11/25 10:33:51.258 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271631 34990 22599606 <nil>} 
+2020/11/25 10:34:01.478 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271641 34993 1610880328 <nil>} 
+2020/11/25 10:34:32.033 [E]  SendWaitPkg err timeout
+2020/11/25 10:37:05.124 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271824 35019 692902435 <nil>} 
+2020/11/25 10:39:09.682 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271949 35036 430636539 <nil>} 
+2020/11/25 10:39:28.134 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606271967 35037 1785013822 <nil>} 
+2020/11/25 10:40:11.209 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606272010 35048 331885195 <nil>} 
+2020/11/25 10:40:45.492 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606272045 35054 1454657050 <nil>} 
+2020/11/25 13:54:15.005 [E]  meizi.lua
+2020/11/25 13:54:15.006 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    sendPic()
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+
+    if (string.find(data.Content, "妹子") ~= 1 and string.find(data.Content, "meizi") ~= 1) then
+        return 1
+    end
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            --toUser = data.FromUin,
+            --sendToType = 1,
+            toUser = data.FromGroupId,
+            sendToType = 2,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = "群聊不提供了，请私发",
+            atUser = 0
+        }
+    )
+
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+local function sendPic(){
+    if (string.find(data.Content, "妹子") ~= 1 and string.find(data.Content, "meizi") ~= 1) then
+        return 1
+    end
+
+    local idx = math.random(0, 130)
+    idx = string.format('%04d', idx)
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/cos_pics/cos_" .. idx .. ".js"
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2)
+		resp = json.decode(resp)
+    local item = resp[math.random(table.getn(resp))]
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/cos_pics/" .. item.path
+    local text = item.category .. " - " .. item.suite .. "\n" .. url
+    log.info("url=%s, text=%s", url, text)
+    ApiRet = Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            --toUser = data.FromGroupId,
+            --sendToType = 2,
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+
+}
+2020/11/25 13:55:15.756 [E]  meizi.lua
+2020/11/25 13:55:15.756 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+
+    if (string.find(data.Content, "妹子") ~= 1 and string.find(data.Content, "meizi") ~= 1) then
+        return 1
+    end
+
+    Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            --toUser = data.FromUin,
+            --sendToType = 1,
+            toUser = data.FromGroupId,
+            sendToType = 2,
+            sendMsgType = "TextMsg",
+            groupid = 0,
+            content = "群聊不提供了，请私发",
+            atUser = 0
+        }
+    )
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+local function sendPic(){
+    if (string.find(data.Content, "妹子") ~= 1 and string.find(data.Content, "meizi") ~= 1) then
+        return 1
+    end
+
+    local idx = math.random(0, 130)
+    idx = string.format('%04d', idx)
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/cos_pics/cos_" .. idx .. ".js"
+    log.info("url=%s", url)
+    local resp = http.request("GET", url).body
+    idx = string.find(resp, "(", 1, true)
+    resp = string.sub(resp, idx + 1, -2)
+		resp = json.decode(resp)
+    local item = resp[math.random(table.getn(resp))]
+    local url = "https://cdn.jsdelivr.net/gh/ipchi9012/cos_pics/" .. item.path
+    local text = item.category .. " - " .. item.suite .. "\n" .. url
+    log.info("url=%s, text=%s", url, text)
+    ApiRet = Api.Api_SendMsg(
+        CurrentQQ,
+        {
+            --toUser = data.FromGroupId,
+            --sendToType = 2,
+            toUser = data.FromUin,
+            sendToType = 1,
+            sendMsgType = "PicMsg", 
+            groupid = 0,
+            content = "",
+            picUrl = url,
+            atUser = 0
+        }
+    )
+
+    return 1
+
+}
+2020/11/25 14:44:25.506 [E]  QQLuaVmRun CallGlobal err <string>:360: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:360: in function 'Cosplay'
+	<string>:27: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 1801267017 啥b王一博 cos TextMsg 1606286665 35402 59301904 <nil>} 
+2020/11/25 19:09:59.931 [E]  demo.lua
+2020/11/25 19:09:59.931 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "test") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:10:04.173 [E]  demo.lua
+2020/11/25 19:10:04.173 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "test") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:10:04.271 [E]  demo.lua
+2020/11/25 19:10:04.271 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "test") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:10:32.084 [E]  demo.lua
+2020/11/25 19:10:32.084 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "test") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:11:10.128 [E]  demo.lua
+2020/11/25 19:11:10.128 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:11:13.107 [E]  demo.lua
+2020/11/25 19:11:13.107 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:11:13.198 [E]  demo.lua
+2020/11/25 19:11:13.198 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:11:25.640 [E]  demo.lua
+2020/11/25 19:11:25.640 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:11:44.111 [E]  demo.lua
+2020/11/25 19:11:44.111 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:11:48.443 [E]  demo.lua
+2020/11/25 19:11:48.443 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:11:48.540 [E]  demo.lua
+2020/11/25 19:11:48.540 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:13:57.258 [E]  demo.lua
+2020/11/25 19:13:57.259 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:14:59.957 [E]  demo.lua
+2020/11/25 19:14:59.957 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:19:15.459 [E]  demo.lua
+2020/11/25 19:19:15.459 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:19:20.006 [E]  demo.lua
+2020/11/25 19:19:20.006 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:20:11.544 [E]  demo.lua
+2020/11/25 19:20:11.545 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:22:04.330 [E]  demo.lua
+2020/11/25 19:22:04.330 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:22:12.257 [E]  demo.lua
+2020/11/25 19:22:12.257 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:22:18.287 [E]  demo.lua
+2020/11/25 19:22:18.287 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:22:23.717 [E]  demo.lua
+2020/11/25 19:22:23.717 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:23:02.380 [E]  demo.lua
+2020/11/25 19:23:02.380 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:23:03.332 [E]  demo.lua
+2020/11/25 19:23:03.332 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:23:05.549 [E]  demo.lua
+2020/11/25 19:23:05.549 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:23:12.650 [E]  demo.lua
+2020/11/25 19:23:12.650 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:23:15.074 [E]  demo.lua
+2020/11/25 19:23:15.074 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:23:16.025 [E]  demo.lua
+2020/11/25 19:23:16.025 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:23:18.122 [E]  QQLuaVmRun CallGlobal err <string>:96: attempt to index a non-table object(nil) with key 'img_src'
+stack traceback:
+	<string>:96: in function 'Illustration'
+	<string>:9: in main chunk
+	[G]: ? detail File PicGroup.lua when  call ReceiveGroupMsg params [0] 783960732  [1] &{893604298 卢应康广场 2677331029 熬夜成瘾 插画 TextMsg 1606303397 35554 1131415914 <nil>} 
+2020/11/25 19:23:24.378 [E]  demo.lua
+2020/11/25 19:23:24.378 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:23:24.703 [E]  demo.lua
+2020/11/25 19:23:24.703 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:23:31.438 [E]  demo.lua
+2020/11/25 19:23:31.438 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:23:35.251 [E]  demo.lua
+2020/11/25 19:23:35.251 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:23:46.264 [E]  demo.lua
+2020/11/25 19:23:46.264 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:23:47.204 [E]  demo.lua
+2020/11/25 19:23:47.204 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:24:08.419 [E]  demo.lua
+2020/11/25 19:24:08.419 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:24:20.003 [E]  demo.lua
+2020/11/25 19:24:20.003 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:24:33.383 [E]  demo.lua
+2020/11/25 19:24:33.384 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:24:33.561 [E]  demo.lua
+2020/11/25 19:24:33.561 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:24:33.808 [E]  demo.lua
+2020/11/25 19:24:33.808 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:24:34.779 [E]  demo.lua
+2020/11/25 19:24:34.779 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:24:35.413 [E]  demo.lua
+2020/11/25 19:24:35.413 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:24:45.996 [E]  demo.lua
+2020/11/25 19:24:45.996 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:24:52.596 [E]  demo.lua
+2020/11/25 19:24:52.596 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:24:53.813 [E]  demo.lua
+2020/11/25 19:24:53.813 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:25:01.712 [E]  demo.lua
+2020/11/25 19:25:01.712 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:25:14.868 [E]  demo.lua
+2020/11/25 19:25:14.868 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:25:14.956 [E]  demo.lua
+2020/11/25 19:25:14.956 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:25:34.701 [E]  demo.lua
+2020/11/25 19:25:34.701 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:25:35.760 [E]  demo.lua
+2020/11/25 19:25:35.760 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:25:48.898 [E]  demo.lua
+2020/11/25 19:25:48.898 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:26:55.120 [E]  demo.lua
+2020/11/25 19:26:55.120 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:29:02.508 [E]  demo.lua
+2020/11/25 19:29:02.508 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:37:52.650 [E]  demo.lua
+2020/11/25 19:37:52.650 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:38:04.699 [E]  demo.lua
+2020/11/25 19:38:04.699 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:53:57.477 [E]  demo.lua
+2020/11/25 19:53:57.477 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:05.354 [E]  demo.lua
+2020/11/25 19:54:05.354 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:07.424 [E]  demo.lua
+2020/11/25 19:54:07.424 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:07.515 [E]  demo.lua
+2020/11/25 19:54:07.515 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:14.889 [E]  demo.lua
+2020/11/25 19:54:14.889 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:15.076 [E]  demo.lua
+2020/11/25 19:54:15.076 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:16.170 [E]  demo.lua
+2020/11/25 19:54:16.170 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:17.301 [E]  demo.lua
+2020/11/25 19:54:17.301 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:19.114 [E]  demo.lua
+2020/11/25 19:54:19.114 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:20.307 [E]  demo.lua
+2020/11/25 19:54:20.307 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:21.912 [E]  demo.lua
+2020/11/25 19:54:21.912 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:31.102 [E]  demo.lua
+2020/11/25 19:54:31.102 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:32.837 [E]  demo.lua
+2020/11/25 19:54:32.837 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:36.147 [E]  demo.lua
+2020/11/25 19:54:36.147 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:44.691 [E]  demo.lua
+2020/11/25 19:54:44.691 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:46.237 [E]  demo.lua
+2020/11/25 19:54:46.237 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:54:52.407 [E]  demo.lua
+2020/11/25 19:54:52.407 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:05.897 [E]  demo.lua
+2020/11/25 19:55:05.897 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:07.443 [E]  demo.lua
+2020/11/25 19:55:07.443 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:14.716 [E]  demo.lua
+2020/11/25 19:55:14.716 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:14.806 [E]  demo.lua
+2020/11/25 19:55:14.806 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:15.801 [E]  demo.lua
+2020/11/25 19:55:15.801 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:26.095 [E]  demo.lua
+2020/11/25 19:55:26.095 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:26.201 [E]  demo.lua
+2020/11/25 19:55:26.201 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:28.093 [E]  demo.lua
+2020/11/25 19:55:28.093 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:28.201 [E]  demo.lua
+2020/11/25 19:55:28.201 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:28.382 [E]  demo.lua
+2020/11/25 19:55:28.382 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:40.611 [E]  demo.lua
+2020/11/25 19:55:40.611 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:43.026 [E]  demo.lua
+2020/11/25 19:55:43.026 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:49.266 [E]  demo.lua
+2020/11/25 19:55:49.267 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:55:57.558 [E]  demo.lua
+2020/11/25 19:55:57.558 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:56:02.804 [E]  demo.lua
+2020/11/25 19:56:02.804 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:56:02.809 [E]  demo.lua
+2020/11/25 19:56:02.809 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:56:04.832 [E]  demo.lua
+2020/11/25 19:56:04.832 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 19:56:11.769 [E]  demo.lua
+2020/11/25 19:56:11.769 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 20:14:51.256 [E]  demo.lua
+2020/11/25 20:14:51.256 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 20:21:17.414 [E]  demo.lua
+2020/11/25 20:21:17.414 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 20:21:43.472 [E]  demo.lua
+2020/11/25 20:21:43.472 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 20:22:13.011 [E]  demo.lua
+2020/11/25 20:22:13.011 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 20:22:22.270 [E]  demo.lua
+2020/11/25 20:22:22.270 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 20:22:27.006 [E]  demo.lua
+2020/11/25 20:22:27.006 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 20:23:38.743 [E]  demo.lua
+2020/11/25 20:23:38.743 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 20:23:46.400 [E]  demo.lua
+2020/11/25 20:23:46.400 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 20:23:49.984 [E]  demo.lua
+2020/11/25 20:23:49.984 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 20:24:00.280 [E]  demo.lua
+2020/11/25 20:24:00.280 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/25 20:24:04.954 [E]  demo.lua
+2020/11/25 20:24:04.954 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/26 19:07:48.148 [E]  demo.lua
+2020/11/26 19:07:48.148 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/26 19:07:49.693 [E]  demo.lua
+2020/11/26 19:07:49.693 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/26 19:08:15.237 [E]  demo.lua
+2020/11/26 19:08:15.237 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/26 19:08:15.287 [E]  demo.lua
+2020/11/26 19:08:15.287 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/26 19:08:26.255 [E]  demo.lua
+2020/11/26 19:08:26.255 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/26 19:08:26.298 [E]  demo.lua
+2020/11/26 19:08:26.298 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/26 19:08:29.294 [E]  demo.lua
+2020/11/26 19:08:29.294 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/26 19:08:30.978 [E]  demo.lua
+2020/11/26 19:08:30.978 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/26 19:08:34.693 [E]  demo.lua
+2020/11/26 19:08:34.693 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/26 19:08:37.899 [E]  demo.lua
+2020/11/26 19:08:37.899 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/26 19:08:40.726 [E]  demo.lua
+2020/11/26 19:08:40.726 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/26 19:08:53.063 [E]  demo.lua
+2020/11/26 19:08:53.063 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
+2020/11/26 19:09:05.845 [E]  demo.lua
+2020/11/26 19:09:05.845 [E]  local log = require("log")
+local Api = require("coreApi")
+local json = require("json")
+local http = require("http")
+
+function ReceiveFriendMsg(CurrentQQ, data)
+    return 1
+end
+function ReceiveGroupMsg(CurrentQQ, data)
+    if (string.find(data.Content, "输入") == 1) then
+        --log.notice("From Lua data.FromGroupId %d", data.FromGroupId)
+
+        luaRes =
+            Api.Api_SendMsg(
+            CurrentQQ,
+            {
+                toUser = data.FromGroupId,
+                sendToType = 2,test
+                sendMsgType = "TextMsg",
+                groupid = 0,
+                content = "监听成功",
+                atUser = 0
+            }
+        )
+        log.notice("From Lua SendMsg Ret-->%d", luaRes.Ret)
+    end
+    return 1
+end
+function ReceiveEvents(CurrentQQ, data, extData)
+    return 1
+end
+
